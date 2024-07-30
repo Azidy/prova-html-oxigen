@@ -61,6 +61,9 @@ nav{
 
 .firstsection{
     background-color: #F1F1F1;
+    max-height: 407px;
+    min-height: 367px;
+    height: auto;
 }
 
 
