@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
-
 *{
     font-family: 'Istok Web'
 }
-
 
 .banner-image{
     background-image: url(imgs/hero-bg.png);
@@ -54,8 +51,8 @@ nav{
     display: none;
 }
 
-.largura-variavel{
-    width: 50%;
+.limitarw{
+    width: 620px;
 }
 
 footer{
@@ -99,7 +96,7 @@ footer{
         transform: translate(-50%);
     }
 
-    .largura-variavel{
-        width: 100%;
+    .limitarw{
+        width: auto;
     }
 }
