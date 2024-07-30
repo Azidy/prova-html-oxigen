@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+*{
+    font-family: 'Istok Web'
+}
+
+
+.banner-image{
+    background-image: url(imgs/hero-bg.png);
+    background-size: cover;
+    background-position: right center;
+}
+
+nav{
+    background-image: linear-gradient(rgba(30, 30, 66, 0.5), #00000000);
+}
+
+.btn-fundo{
+    background-color: #121212;
+    width: 290px;
+    height: 80px;
+}
+
+.circulo-lupa{
+    height: 58px;
+    width: 58px;
+}
+
+.circulo-mais{
+    width: 46px;
+    height: 46px;
+}
+
+#portaldeduvidas{
+    height: 46px;
+    width: 290px;
+}
+
+.text-purple{
+    color: #706EF4;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    background-color: black;
+}
+
+.logo-320px{
+    display: none;
+}
+
+footer{
+    background-color: #121212;
+}
+
+.fonte-pequena{
+    font-size: small;
+}
+
+@media (max-width: 575.98px){
+    .banner-image{
+        background-color: #706EF4;
+        background-image: none;
+    }
+
+    nav{
+        background-image: none;
+        background-color: black;
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .sumir{
+        display: none;
+    }
+
+    .logo-320px{
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media (max-width: 991.98px){
+    .navbar-brand{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
