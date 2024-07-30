@@ -4,6 +4,8 @@
     font-family: 'Istok Web'
 }
 
+/* ---- Header ---- */
+
 .banner-image{
     background-image: url(imgs/hero-bg.png);
     background-size: cover;
@@ -55,6 +57,16 @@ nav{
     width: 620px;
 }
 
+/* ---- Main ---- */
+
+.firstsection{
+    background-color: #F1F1F1;
+}
+
+
+
+/* ---- Footer ---- */
+
 footer{
     background-color: #121212;
 }
@@ -62,6 +74,8 @@ footer{
 .fonte-pequena{
     font-size: small;
 }
+
+/* ---- Media Queries ---- */
 
 @media (max-width: 575.98px){
     .banner-image{
@@ -89,6 +103,7 @@ footer{
         transform: translate(-50%);
     }
 }
+
 @media (max-width: 991.98px){
     .navbar-brand{
         position: absolute;
