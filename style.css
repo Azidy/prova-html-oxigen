@@ -54,6 +54,10 @@ nav{
     display: none;
 }
 
+.largura-variavel{
+    width: 50%;
+}
+
 footer{
     background-color: #121212;
 }
@@ -93,5 +97,9 @@ footer{
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .largura-variavel{
+        width: 100%;
     }
 }
