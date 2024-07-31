@@ -92,6 +92,22 @@ picture > img{
     height: 385px;
 }
 
+.titulo-baixo{
+    display: none;
+}
+
+.folinha{
+    min-width: 256px;
+    display: inline-flex;
+    margin: 12px 15px 12px 15px;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid;
+    border-color: #706EF4;
+    height: 58px;
+    align-items: center;
+}
+
 /* ---- Footer ---- */
 
 footer{
@@ -131,6 +147,14 @@ footer{
 
     .fonte-grande{
         font-size: 24pt;
+    }
+
+    .titulo-cima{
+        display: none;
+    }
+
+    .titulo-baixo{
+        display: block;
     }
 }
 
