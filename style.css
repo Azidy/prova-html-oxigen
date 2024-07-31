@@ -87,6 +87,11 @@ picture > img{
     width: 250px;
 }
 
+.tamanho-card{
+    max-width: 542px;
+    height: 385px;
+}
+
 /* ---- Footer ---- */
 
 footer{
@@ -113,6 +118,10 @@ footer{
 
     .fonte-grande{
         font-size: 30pt;
+    }
+
+    .sumir-video{
+        display: none;
     }
 }
 
