@@ -66,17 +66,26 @@ nav{
 
 .firstsection{
     background-color: #F1F1F1;
-    max-height: 407px;
     min-height: 367px;
-    height: auto;
+    height: fit-content;
 }
 
 .fonte-grande{
     font-size: 32pt;
 }
 
+picture > img{
+    width: 100%;
+    height: auto;
+}
 
-
+.img-coca{
+    width: 250px;
+    gap: 31px;
+}
+.img-pepsi{
+    width: 250px;
+}
 
 /* ---- Footer ---- */
 
