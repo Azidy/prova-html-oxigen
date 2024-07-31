@@ -80,11 +80,11 @@ picture > img{
 }
 
 .img-coca{
-    width: 250px;
-    gap: 31px;
+    width: 50%;
+    padding-right: 31px;
 }
 .img-pepsi{
-    width: 250px;
+    width: 50%;
 }
 
 .tamanho-card{
@@ -159,5 +159,9 @@ footer{
         position: relative;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .fonte-grande{
+        font-size: 20pt;
     }
 }
