@@ -17,10 +17,6 @@ h1{
     min-height: 700px;
 }
 
-nav{
-    background-image: linear-gradient(rgba(30, 30, 66, 0.5), #00000000);
-}
-
 .padding-titulo{
     padding-top: 100px;
 }
@@ -135,7 +131,7 @@ picture > img{
     display: inline-flex;
     color: black;
     text-decoration: none;
-    border-bottom: solid;
+    border-bottom: 4px solid;
     border-color: #706EF4;
     height: 58px;
     align-items: center;
