@@ -4,16 +4,25 @@
     font-family: 'Istok Web'
 }
 
+h1{
+    font-size: 80px;
+}
+
 /* ---- Header ---- */
 
 .banner-image{
     background-image: url(imgs/hero-bg.png);
     background-size: cover;
     background-position: right center;
+    min-height: 700px;
 }
 
 nav{
     background-image: linear-gradient(rgba(30, 30, 66, 0.5), #00000000);
+}
+
+.padding-titulo{
+    padding-top: 100px;
 }
 
 .btn-fundo{
@@ -70,6 +79,10 @@ nav{
     height: fit-content;
 }
 
+.padding-sections{
+    padding: 120px 0px;
+}
+
 .fonte-grande{
     font-size: 32pt;
 }
@@ -96,10 +109,30 @@ picture > img{
     display: none;
 }
 
+.separar-radio{
+    gap: 37px;
+}
+
+.altura-radio{
+    height: 49px;
+}
+
+#radio1{
+    width: 103px;
+}
+
+#radio2{
+    width: 180px;
+}
+
+.gap-folinha{
+    gap: 25px 30px;
+}
+
 .folinha{
-    min-width: 256px;
+    min-width: 210px;
+    width: auto;
     display: inline-flex;
-    margin: 12px 15px 12px 15px;
     color: black;
     text-decoration: none;
     border-bottom: solid;
@@ -113,6 +146,10 @@ picture > img{
 footer{
     background-color: #121212;
 }
+
+    .padding-footer{
+        padding-top: 100px;
+    }
 
 .fonte-pequena{
     font-size: small;
@@ -128,9 +165,7 @@ footer{
         transform: translate(-50%);
     }
 
-    .limitarw{
-        width: auto;
-    }
+
 
     .fonte-grande{
         font-size: 30pt;
@@ -149,6 +184,10 @@ footer{
         font-size: 24pt;
     }
 
+    .limitarw{
+        width: auto;
+    }
+
     .titulo-cima{
         display: none;
     }
@@ -156,10 +195,19 @@ footer{
     .titulo-baixo{
         display: block;
     }
+
+    .logo-320px{
+        display: none;
+    }
 }
 
 /* Breakpoint SM */
 @media (max-width: 575.98px){ 
+
+    header{
+        height: fit-content;
+    }
+
     .banner-image{
         background-color: #706EF4;
         background-image: none;
@@ -178,14 +226,29 @@ footer{
         display: none;
     }
 
+    .padding-titulo{
+        padding-top: 0px;
+    }
+
     .logo-320px{
-        display: flex;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
+        padding-top: 150px;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    div > h1{
+        padding-top: 0px;
+    }
+
+    h1{
+        font-size: 42px;
     }
 
     .fonte-grande{
         font-size: 20pt;
     }
+
+    #radio2{
+        width: 150px;
+    }    
 }
