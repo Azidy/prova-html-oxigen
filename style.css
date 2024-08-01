@@ -27,6 +27,10 @@ h1{
     height: 80px;
 }
 
+.sumir{
+    display: flex;
+}
+
 .circulo-lupa{
     height: 58px;
     width: 58px;
@@ -105,6 +109,11 @@ picture > img{
     display: none;
 }
 
+.padding-radio{
+    padding-top: 50px;
+    padding-bottom: 33px;
+}
+
 .separar-radio{
     gap: 37px;
 }
@@ -121,13 +130,9 @@ picture > img{
     width: 180px;
 }
 
-.gap-folinha{
-    gap: 25px 30px;
-}
 
 .folinha{
-    min-width: 210px;
-    width: auto;
+    width: 250px;
     display: inline-flex;
     color: black;
     text-decoration: none;
@@ -135,6 +140,10 @@ picture > img{
     border-color: #706EF4;
     height: 58px;
     align-items: center;
+}
+
+.gap-folinha{
+    gap: 25px 30px;
 }
 
 /* ---- Footer ---- */
@@ -162,13 +171,16 @@ footer{
     }
 
 
-
     .fonte-grande{
         font-size: 30pt;
     }
 
     .sumir-video{
         display: none;
+    }
+
+    .folinha{
+        width: 390px;
     }
 }
 
@@ -195,6 +207,11 @@ footer{
     .logo-320px{
         display: none;
     }
+
+    .folinha{
+        width: 200px;
+    }
+
 }
 
 /* Breakpoint SM */
@@ -247,4 +264,8 @@ footer{
     #radio2{
         width: 150px;
     }    
+
+    .folinha{
+        width: 100%;
+    }
 }
