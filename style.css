@@ -27,6 +27,14 @@ h1{
     height: 80px;
 }
 
+.estilo-dropdown{;
+    background-color: rgba(112, 110, 244, 0.85);
+}
+
+.cor-hover:hover{
+    background-color: #4C4CA8;
+}
+
 .sumir{
     display: flex;
 }
@@ -162,6 +170,17 @@ footer{
 
 /* ---- Media Queries ---- */
 
+@media (max-width: 1199.98px) {
+    .padding-folinha{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .folinha{
+        width: 390px;
+    }
+}
+
 /* Breakpoint LG */
 @media (max-width: 991.98px){
     .navbar-brand{
@@ -179,8 +198,8 @@ footer{
         display: none;
     }
 
-    .folinha{
-        width: 390px;
+    .estilo-dropdown{
+        background-color: rgba(255, 255, 255, 0);
     }
 }
 
@@ -212,6 +231,11 @@ footer{
         width: 200px;
     }
 
+    .padding-folinha{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
 }
 
 /* Breakpoint SM */
@@ -223,7 +247,7 @@ footer{
 
     .banner-image{
         background-color: #706EF4;
-        background-image: none;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0));
     }
 
     nav{
@@ -233,6 +257,10 @@ footer{
 
     .navbar-brand{
         display: none;
+    }
+
+    .estilo-dropdown{
+        background-color: #000;
     }
 
     .sumir{
