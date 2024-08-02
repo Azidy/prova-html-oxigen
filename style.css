@@ -160,9 +160,18 @@ footer{
     background-color: #121212;
 }
 
-    .padding-footer{
+.padding-footer{
         padding-top: 100px;
-    }
+}
+
+.btn-medium{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    color: #FFF;
+    background-color: #706EF4;
+}
 
 .fonte-pequena{
     font-size: small;
@@ -177,7 +186,7 @@ footer{
     }
 
     .folinha{
-        width: 390px;
+        width: 365px;
     }
 }
 
