@@ -161,7 +161,7 @@ footer{
 }
 
 .padding-footer{
-        padding-top: 100px;
+    padding-top: 100px;
 }
 
 .btn-medium{
@@ -179,7 +179,9 @@ footer{
 
 /* ---- Media Queries ---- */
 
+/* Breakpoint XL */
 @media (max-width: 1199.98px) {
+    
     .padding-folinha{
         padding-top: 45px;
         padding-bottom: 45px;
@@ -192,12 +194,12 @@ footer{
 
 /* Breakpoint LG */
 @media (max-width: 991.98px){
+
     .navbar-brand{
         position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
-
 
     .fonte-grande{
         font-size: 30pt;
