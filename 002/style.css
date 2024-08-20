@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: 'Poppins';
 }
 
@@ -20,13 +20,17 @@
     text-transform: uppercase;
 }
 
-.ham-menu{
+.ham-menu {
     height: 50px;
     width: 50px;
     position: relative;
 }
 
-.ham-menu span{
+ul {
+    list-style-type: none;
+}
+
+.ham-menu span {
     height: 3px;
     width: 100%;
     background-color: #FFF;
@@ -37,26 +41,30 @@
     transform: translate(-50%, -50%);
     transition: .3s ease-in-out;
 }
-.ham-menu span:nth-child(1){
+
+.ham-menu span:nth-child(1) {
     top: 25%;
 }
-.ham-menu span:nth-child(3){
+
+.ham-menu span:nth-child(3) {
     top: 75%;
 }
 
-.ham-menu.active span:nth-child(1){
+.ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-.ham-menu.active span:nth-child(2){
+
+.ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
-.ham-menu.active span:nth-child(3){
+
+.ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.off-screen-menu{
+.off-screen-menu {
     background-color: rgb(27, 48, 87);
     opacity: 0.96;
     height: 100vh;
@@ -67,46 +75,76 @@
     right: -450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: end;
     transition: .3s ease-in-out;
 }
 
-.off-screen-menu.active{
+.off-screen-menu.active {
     right: 0;
 }
 
-/* Main */
+/* Main index */
 
-h1{
+h1 {
     font-size: 40pt;
     color: #1B3057;
 }
 
-.cor-cinza{
-    color: #394E61;
-}
-
-.links-pags{
+.links-pags {
     color: #496DBF;
     text-decoration: none;
 }
 
-.btn-primary{
+.cor-cinza {
+    color: #394E61;
+}
+
+.btn-start-appointment{
     height: 53px;
     width: 250px;
+}
+
+.btn-group{
+    height: 70px;
+}
+
+.btn-circle{
+    height: 41px;
+    width: 41px;
+}
+
+.btn-primary {
     background-color: #C05A94;
     border-color: #C05A94;
 }
-.btn.btn-primary:hover{
+
+.btn.btn-primary:hover {
     background-color: #C05A94;
     border-color: #733659;
 }
 
+.btn-outline-primary {
+    border-color: #C05A94;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: #C05A94;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #C05A94;
+    --bs-btn-border-color: #C05A94;
+    --bs-btn-active-border-color: #C05A94;
+}
+
 /* Footer */
 
-hr{
+hr {
     background-color: #C18E24;
     border-width: 0;
     color: #C18E24;
@@ -117,14 +155,14 @@ hr{
 .btn-chat:hover,
 .btn-chat:focus,
 .btn-chat:active,
-.btn-chat:focus{
+.btn-chat:focus {
     background-color: #C05A94;
     outline: none;
     box-shadow: none;
     border: 0;
 }
 
-.circulo-lupa{
+.circulo-lupa {
     height: 58px;
     width: 58px;
     background-color: #C05A94;
