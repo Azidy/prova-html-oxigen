@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+/* Header */
+
+.gradient-bg {
+    background-image: linear-gradient(to right, #1E315B, #496DBF);
+}
+
+.vertical-line {
+    border-left: 2px solid #496DBF;
+    height: 40px;
+}
+
+.text-top {
+    color: #C0A37B;
+    text-transform: uppercase;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.ham-menu span{
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease-in-out;
+}
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.off-screen-menu{
+    background-color: rgb(27, 48, 87);
+    opacity: 0.96;
+    height: 100vh;
+    width: 100%;
+    max-width: 388px;
+    position: fixed;
+    top: 80px;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    transition: .3s ease-in-out;
+}
+
+.off-screen-menu.active{
+    right: 0;
+}
+
+/* Main */
+
+h1{
+    font-size: 40pt;
+    color: #1B3057;
+}
+
+.cor-cinza{
+    color: #394E61;
+}
+
+.links-pags{
+    color: #496DBF;
+    text-decoration: none;
+}
+
+.btn-primary{
+    height: 53px;
+    width: 250px;
+    background-color: #C05A94;
+    border-color: #C05A94;
+}
+.btn.btn-primary:hover{
+    background-color: #C05A94;
+    border-color: #733659;
+}
+
+/* Footer */
+
+hr{
+    background-color: #C18E24;
+    border-width: 0;
+    color: #C18E24;
+    height: 2px;
+}
+
+.btn-chat,
+.btn-chat:hover,
+.btn-chat:focus,
+.btn-chat:active,
+.btn-chat:focus{
+    background-color: #C05A94;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.circulo-lupa{
+    height: 58px;
+    width: 58px;
+    background-color: #C05A94;
+}
