@@ -26,7 +26,7 @@
     position: relative;
 }
 
-ul {
+.ul-menu {
     list-style-type: none;
 }
 
@@ -71,7 +71,7 @@ ul {
     width: 100%;
     max-width: 388px;
     position: fixed;
-    top: 80px;
+    top: 82px;
     right: -450px;
     display: flex;
     flex-direction: column;
@@ -100,11 +100,6 @@ h1 {
     color: #394E61;
 }
 
-.btn-start-appointment{
-    height: 53px;
-    width: 250px;
-}
-
 .btn-group{
     height: 70px;
 }
@@ -112,6 +107,7 @@ h1 {
 .btn-circle{
     height: 41px;
     width: 41px;
+    border-width: 2px;
 }
 
 .btn-primary {
@@ -119,9 +115,15 @@ h1 {
     border-color: #C05A94;
 }
 
-.btn.btn-primary:hover {
-    background-color: #C05A94;
-    border-color: #733659;
+.btn-start-appointment{
+    height: 53px;
+    width: 250px;
+    color: white;
+}
+
+.btn-start-appointment:hover{
+    background-color: #A33E78;
+    border-color: #A33E78;
 }
 
 .btn-outline-primary {
@@ -137,14 +139,73 @@ h1 {
 }
 
 .btn-outline-primary {
+    border-width: 2px;
     --bs-btn-color: #C05A94;
     --bs-btn-border-color: #C05A94;
     --bs-btn-active-border-color: #C05A94;
 }
+/* Main faq */
+
+.enfeite{
+    position: absolute;
+    top: 140px;
+}
+
+.semi-header{
+    background-image: linear-gradient(to right, #1E315B, #496DBF);
+    margin-top: 82px;
+    padding: 70px;
+}
+
+.ul-faq{
+    list-style-image:url(imgs/ico-ul.svg);
+    padding-left: 1rem;
+    padding-bottom: 25px;
+}
+
+.linha-faq{
+    background-color: #C3E3ED;
+    border-width: 0;
+    color: #C3E3ED;
+    height: 3px;
+}
+
+.btn-faq.collapsed{
+    background-color: rgba(255,255,255,0);
+}
+
+.btn-faq{
+    background-color: #C05A94;
+}
+
+.btn-faq:hover {
+    background-color: #A33E78;
+    border-color: #A33E78;
+}
+
+.btn-faq:hover svg path {
+    stroke: #FFF;
+}
+
+.margin-faq-answer{
+    margin-left: 2.8rem;
+}
+
+.chevron.collapsed{
+    stroke:#C05A94; 
+
+}
+.chevron{
+    stroke:white;
+    stroke-width: 2;
+    fill: none; 
+}
 
 /* Footer */
 
-hr {
+.linha-footer {
+    margin-top: 57px;
+    margin-bottom: 37px;
     background-color: #C18E24;
     border-width: 0;
     color: #C18E24;

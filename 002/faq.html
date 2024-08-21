@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Hospital - FAQ</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -15,17 +15,17 @@
 
 <body>
     <header>
-        <nav class="navbar gradient-bg bg-body-tertiary d-flex">
+        <nav class="navbar fixed-top gradient-bg bg-body-tertiary d-flex">
             <div class="container py-2">
                 <div class="d-flex gap-2 align-items-center">
                     <a class="navbar-brand m-0 d-flex" href="#">
                         <img src="imgs/HOSPITAL.svg" alt="logo">
                     </a>
-                    <div class="vertical-line"></div>
-                    <p class="text-top m-0">Agendamento de consultas</p>
+                    <div class="vertical-line d-none d-md-inline"></div>
+                    <p class="text-top m-0 d-none d-md-inline">Agendamento de consultas</p>
                 </div>
                 <div class="off-screen-menu sticky-top">
-                    <ul class="text-white">
+                    <ul class="ul-menu">
                         <li><a href="index.html" class="text-white link-underline link-underline-opacity-0">Home</a>
                         </li>
                         <li><a href="#" class="text-white link-underline link-underline-opacity-0">Rede credenciada</a>
@@ -43,10 +43,14 @@
                     <span></span>
                     <span></span>
                 </div>
-
             </div>
+        </nav>
+    </header>
+    <main>
+        <img class="enfeite" src="imgs/enfeite.png" alt="enfeite">
+        <div class="semi-header">
             <div class="container">
-                <div class="col-12 m-5 breadcrumbs">
+                <div class="col-12 breadcrumbs">
                     <div class="d-flex justify-content-end gap-3">
                         <a href="#" class="text-white links-pags">HOME</a>
                         <span class="text-white links-pags"> | </span>
@@ -59,9 +63,7 @@
                     <h1 class="text-white">Perguntas Frequentes</h1>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
+        </div>
         <div class="container">
             <div class="d-grid mt-5 gap-3">
                 <div class="col-6">
@@ -74,34 +76,234 @@
                 <div class="col-12 mb-3">
                     <div class="btn-group w-100 rounded-pill" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary rounded-start-pill d-flex align-items-center justify-content-center" for="btnradio1">Plano de Saúde</label>
+                        <label
+                            class="btn btn-outline-primary rounded-start-pill d-flex align-items-center justify-content-center"
+                            for="btnradio1">Plano de Saúde</label>
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary d-flex align-items-center justify-content-center" for="btnradio2">Planos A</label>
+                        <label
+                            class="btn btn-outline-primary border-start-0 d-flex align-items-center justify-content-center"
+                            for="btnradio2">Planos A</label>
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-primary d-flex align-items-center justify-content-center" for="btnradio3">Planos A+</label>
+                        <label
+                            class="btn btn-outline-primary border-start-0 border-end-0 d-flex align-items-center justify-content-center"
+                            for="btnradio3">Planos A+</label>
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                        <label class="btn btn-outline-primary d-flex align-items-center justify-content-center" for="btnradio4">Planos B</label>
+                        <label class="btn btn-outline-primary d-flex align-items-center justify-content-center"
+                            for="btnradio4">Planos B</label>
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                        <label class="btn btn-outline-primary d-flex align-items-center justify-content-center" for="btnradio5">Hospital</label>
+                        <label
+                            class="btn btn-outline-primary border-start-0 border-end-0 d-flex align-items-center justify-content-center"
+                            for="btnradio5">Hospital</label>
 
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                        <label class="btn btn-outline-primary rounded-end-pill d-flex align-items-center justify-content-center" for="btnradio6">App Hospital</label>
+                        <label
+                            class="btn btn-outline-primary rounded-end-pill d-flex align-items-center justify-content-center"
+                            for="btnradio6">App Hospital</label>
                     </div>
                 </div>
                 <div class="col-12">
-                    <ul>
-                        <li> 
-                            <button class="btn btn-primary btn-circle rounded-circle" type="radio" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <ul class="ul-menu">
+                        <li>
+                            <button
+                                class="btn btn-primary btn-circle rounded-circle btn-faq collapsed d-inline-flex justify-content-center align-items-center"
+                                type="radio" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                                aria-controls="collapse1">
+                                <svg class="chevron collapsed" width="12" height="8" viewBox="0 0 12 8"
+                                    xmlns="http://www.w3.org/2000/" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <path d="M1 1L6 6L11 1" />
+                                </svg>
                             </button>
-                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse1" role="button"
+                                aria-expanded="false" aria-controls="collapse1">
                                 1. Qual o processo de contratar um plano de saúde?
                             </a>
+                            <div class="collapse" id="collapse1">
+                                <div class="margin-faq-answer">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
                         </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button
+                                class="btn btn-primary btn-circle rounded-circle btn-faq collapsed d-inline-flex justify-content-center align-items-center"
+                                type="radio" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                aria-controls="collapse2">
+                                <svg class="chevron collapsed" width="12" height="8" viewBox="0 0 12 8"
+                                    xmlns="http://www.w3.org/2000/" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <path d="M1 1L6 6L11 1" />
+                                </svg>
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse2" role="button"
+                                aria-expanded="false" aria-controls="collapse2">
+                                2. O que é Carência?
+                            </a>
+                            <div class="collapse" id="collapse2">
+                                <div class="margin-faq-answer">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button
+                                class="btn btn-primary btn-circle rounded-circle btn-faq collapsed d-inline-flex justify-content-center align-items-center"
+                                type="radio" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                aria-controls="collapse3">
+                                <svg class="chevron collapsed" width="12" height="8" viewBox="0 0 12 8"
+                                    xmlns="http://www.w3.org/2000/" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <path d="M1 1L6 6L11 1" />
+                                </svg>
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse3" role="button"
+                                aria-expanded="false" aria-controls="collapse3">
+                                3. Qual o tempo de Carência dos Planos? Se eu fechar o Plano agora, já posso marcar
+                                consulta?
+                            </a>
+                            <div class="collapse" id="collapse3">
+                                <div class="margin-faq-answer">
+                                    <p class="cor-cinza font-bold"><b>A partir do fechamento de contrato do nosso plano,
+                                            seguimos as carências abaixo:</b></p>
+                                    <ul class="ul-faq cor-cinza">
+                                        <li>Em <b>24h</b> consegue fazer atendimentos de emergências e urgências (pronto
+                                            socorro);</li>
+                                        <li>Em <b>7</b> dias consegue realizar as consultas médicas ambulatoriais;</li>
+                                        <li>Em <b>30</b> dias consegue realizar exames médicos auxiliares e de rotina;
+                                        </li>
+                                        <li>Em <b>60</b> dias consegue realizar exames complementares;</li>
+                                        <li>Em <b>120</b> dias consegue realizar terapias e sessões com psicólogo,
+                                            fonoaudiólogo e outros.</li>
+                                        <li>Em <b>150</b> dias Consegue realizar exames e procedimentos Especiais como
+                                            Ultrassonografia, Mamografias e outros.</li>
+                                        <li>Em <b>180</b> dias consegue realizar procedimentos de alta complexidade.
+                                        </li>
+                                        <li>Em <b>300</b> dias consegue realizar partos a termo.</li>
+                                        <li>Vale ressaltar que doenças ou lesões pré-existehntes podem vir a gerar uma
+                                            cobertura parcial temporária no Plano de Saúde de 720 dias.</li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                aria-controls="collapse4">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse btn-faq" href="#collapse4"
+                                role="button" aria-expanded="false" aria-controls="collapse4">
+                                4. Onde vejo as minhas coberturas e carências?
+                            </a>
+                            <div class="collapse" id="collapse4">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                aria-controls="collapse5">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse btn-faq" href="#collapse5"
+                                role="button" aria-expanded="false" aria-controls="collapse5">
+                                5. Existe plano de saúde sem Carência?
+                            </a>
+                            <div class="collapse" id="collapse5">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                                aria-controls="collapse6">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse6" role="button"
+                                aria-expanded="false" aria-controls="collapse6">
+                                6. O que é a Cobertura Parcial Temporária?
+                            </a>
+                            <div class="collapse" id="collapse6">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"
+                                aria-controls="collapse7">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse7" role="button"
+                                aria-expanded="false" aria-controls="collapse7">
+                                7. O que é Coparticipação?
+                            </a>
+                            <div class="collapse" id="collapse7">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"
+                                aria-controls="collapse8">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse8" role="button"
+                                aria-expanded="false" aria-controls="collapse8">
+                                8. Qual a taxa máxima de Coparticipação para exames?
+                            </a>
+                            <div class="collapse" id="collapse8">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false"
+                                aria-controls="collapse9">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse9" role="button"
+                                aria-expanded="false" aria-controls="collapse9">
+                                9. Se meu plano tem coparticipação, quando a taxa de um serviço que utilizei é cobrada
+                                na fatura?
+                            </a>
+                            <div class="collapse" id="collapse9">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
+                        <li>
+                            <button class="btn btn-primary btn-circle rounded-circle btn-faq collapsed" type="radio"
+                                data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"
+                                aria-controls="collapse10">
+                            </button>
+                            <a class="links-pags cor-cinza" data-bs-toggle="collapse" href="#collapse10" role="button"
+                                aria-expanded="false" aria-controls="collapse10">
+                                10. O que é uma Operadora de Planos de Saúde verticalizada?
+                            </a>
+                            <div class="collapse" id="collapse10">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                        </li>
+                        <div class="linha-faq my-3"></div>
                     </ul>
                 </div>
             </div>
@@ -121,7 +323,7 @@
                         <br>CNPJ 00.000.000/0001-00</span>
                 </div>
             </div>
-            <hr>
+            <div class="linha-footer"></div>
             <div class="d-flex gap-5 justify-content-between">
                 <div class="d-flex align-items-center">
                     <span class="text-white">© 2024 Oxigenweb Hospital. Criação:&nbsp;</span>
