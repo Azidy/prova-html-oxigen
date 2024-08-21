@@ -100,11 +100,11 @@ h1 {
     color: #394E61;
 }
 
-.btn-group{
+.btn-group {
     height: 70px;
 }
 
-.btn-circle{
+.btn-circle {
     height: 41px;
     width: 41px;
     border-width: 2px;
@@ -113,15 +113,16 @@ h1 {
 .btn-primary {
     background-color: #C05A94;
     border-color: #C05A94;
+    --bs-btn-active-border-color: #65264A;
 }
 
-.btn-start-appointment{
+.btn-start-appointment {
     height: 53px;
     width: 250px;
     color: white;
 }
 
-.btn-start-appointment:hover{
+.btn-start-appointment:hover {
     background-color: #A33E78;
     border-color: #A33E78;
 }
@@ -144,37 +145,59 @@ h1 {
     --bs-btn-border-color: #C05A94;
     --bs-btn-active-border-color: #C05A94;
 }
+
 /* Main faq */
 
-.enfeite{
+.enfeite {
     position: absolute;
     top: 140px;
 }
 
-.semi-header{
+.semi-header {
     background-image: linear-gradient(to right, #1E315B, #496DBF);
     margin-top: 82px;
     padding: 70px;
 }
 
-.ul-faq{
-    list-style-image:url(imgs/ico-ul.svg);
+.losango{
+    opacity: 0;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #C05A94;
+    rotate: 45deg;
+    top: 95%;
+    left: 50%;
+
+}
+
+.losango-ativo{
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+.losango.collapsed{
+    display: none;
+}
+
+.ul-faq {
+    list-style-image: url(imgs/ico-ul.svg);
     padding-left: 1rem;
     padding-bottom: 25px;
 }
 
-.linha-faq{
+.linha-faq {
     background-color: #C3E3ED;
     border-width: 0;
     color: #C3E3ED;
     height: 3px;
 }
 
-.btn-faq.collapsed{
-    background-color: rgba(255,255,255,0);
+.btn-faq.collapsed {
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.btn-faq{
+.btn-faq {
     background-color: #C05A94;
 }
 
@@ -187,18 +210,20 @@ h1 {
     stroke: #FFF;
 }
 
-.margin-faq-answer{
+.margin-faq-answer {
     margin-left: 2.8rem;
 }
 
-.chevron.collapsed{
-    stroke:#C05A94; 
-
+.chevron.collapsed {
+    stroke: #C05A94;
+    rotate: 0deg;
 }
-.chevron{
-    stroke:white;
+
+.chevron {
+    stroke: white;
     stroke-width: 2;
-    fill: none; 
+    fill: none;
+    rotate: 180deg;
 }
 
 /* Footer */
