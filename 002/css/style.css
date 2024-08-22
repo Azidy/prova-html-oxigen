@@ -132,7 +132,6 @@
 }
 
 .card{
-    width: 150px;
     height: 300px;
 }
 
@@ -200,8 +199,6 @@
     color: #C3E3ED;
     height: 3px;
 }
-
-
 
 .margin-faq-answer {
     margin-left: 2.8rem;

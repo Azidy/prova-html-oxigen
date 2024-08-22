@@ -49,7 +49,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-xl vh-100">
+        <div class="container-xl">
             <div class="col breadcrumbs">
                 <div class="d-flex justify-content-end gap-3">
                     <a href="#" class="links-pags">HOME</a>
@@ -63,8 +63,10 @@
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 col-md-6">
                         <div class="d-grid gap-4">
-                            <h1 class="fonte-azul fonte-grande fonte-titulo fonte-titulo">Agende consultas com praticidade</h1>
-                            <p class="cor-cinza fonte-titulo">Busque e agende a sua consulta com médicos, psicólogos, nutricionistas
+                            <h1 class="fonte-azul fonte-grande fonte-titulo fonte-titulo">Agende consultas com
+                                praticidade</h1>
+                            <p class="cor-cinza fonte-titulo">Busque e agende a sua consulta com médicos, psicólogos,
+                                nutricionistas
                                 e outras especialidades que
                                 atendem no Hospital Oxigenweb em Presidente Prudente - SP</p>
                             <button class="btn btn-primary btn-start-appointment">Agende Aqui</button>
@@ -156,48 +158,76 @@
                         <h2><b id="etapa" class="fonte-azul text-center fonte-titulo">Selecione a especialidade</b></h2>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div>
+                        <section id="form-doctor" class="d-none">
                             <span>Profissionais de Gastroenterologia</span>
                             <div class="row">
-                                <div class="col-auto">
+                                <div class="col">
                                     <div class="card">
-                                        <div class="card-image d-flex justify-content-center align-items-center">
-                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px" alt="">
+                                        <div
+                                            class="card-image rounded-top d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px"
+                                                alt="">
                                         </div>
                                         <div class="card-body d-grid">
                                             <p class="card-title text-center m-0">Dra. Jéssica Oxigenweb</p>
-                                            <input type="radio" class="doctor-radio" name="doutor" value="Jéssica" id="doutor1">
+                                            <input type="radio" class="doctor-radio" name="doutor" value="Jéssica"
+                                                id="doutor1">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col">
                                     <div class="card">
-                                        <div class="card-image d-flex justify-content-center align-items-center">
-                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px" alt="">
+                                        <div
+                                            class="card-image rounded-top d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px"
+                                                alt="">
                                         </div>
                                         <div class="card-body d-grid">
                                             <p class="card-title text-center m-0">Dr. Nathan Oxigenweb</p>
-                                            <input type="radio" class="doctor-radio" name="doutor" value="Nathan" id="doutor2">
+                                            <input type="radio" class="doctor-radio" name="doutor" value="Nathan"
+                                                id="doutor2">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div class="col">
                                     <div class="card">
-                                        <div class="card-image d-flex justify-content-center align-items-center">
-                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px" alt="">
+                                        <div
+                                            class="card-image rounded-top d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ico-doctor-placeholder.png" height="50px" width="58px"
+                                                alt="">
                                         </div>
                                         <div class="card-body d-grid">
                                             <p class="card-title text-center m-0">Dr. Ricardo Nakamura Oxigenweb</p>
-                                            <input type="radio" class="doctor-radio" name="doutor" value="Ricardo Nakamura" id="doutor3">
+                                            <input type="radio" class="doctor-radio" name="doutor"
+                                                value="Ricardo Nakamura" id="doutor3">
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-next">Agende Aqui</button>
+                                <div class="d-flex mt-4 justify-content-between">
+                                    <button class="btn btn-ghost-primary btn-next"><i
+                                            class="bi bi-chevron-left"></i>Voltar</button>
+                                    <button class="btn btn-primary btn-next">Avançar <i
+                                            class="bi bi-chevron-right"></i></button>
+                                </div>
                             </div>
-                        </div>
+                        </section>
+                        <section id="form-time" class="">
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control" type="date" aria-label="date input">
+                                </div>
+                                <div class="d-flex mt-4 justify-content-between">
+                                    <button class="btn btn-ghost-primary btn-next"><i
+                                            class="bi bi-chevron-left"></i>Voltar</button>
+                                    <button class="btn btn-primary btn-next">Avançar <i
+                                            class="bi bi-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </section>
+
         </div>
     </main>
     <footer>
