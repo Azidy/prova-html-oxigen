@@ -1,41 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-*{
-    font-family: 'Istok Web'
-}
-
-h1{
-    font-size: 80px;
-}
-
 /* ---- Header ---- */
 
-.banner-image{
-    background-image: url(imgs/hero-bg.png);
+.banner-image {
+    background-image: url(../imgs/hero-bg.png);
     background-size: cover;
     background-position: right center;
     min-height: 700px;
 }
 
-.padding-titulo{
+.padding-titulo {
     padding-top: 100px;
 }
 
-.btn-fundo{
+.btn-fundo {
     background-color: #121212;
     width: 290px;
     height: 80px;
 }
 
-.estilo-dropdown{
+.estilo-dropdown {
     background-color: rgba(112, 110, 244, 0.85);
 }
 
-.cor-hover:hover{
+.cor-hover:hover {
     background-color: #4C4CA8;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     width: 40px;
     height: 20px;
     position: relative;
@@ -45,18 +35,18 @@ h1{
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon:focus{
+.navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
     border: 0;
 }
 
-.navbar-toggler span{
+.navbar-toggler span {
     margin: 0;
     padding: 0;
 }
 
-.toggler-icon{
+.toggler-icon {
     display: block;
     position: absolute;
     height: 3px;
@@ -69,173 +59,217 @@ h1{
     transition: .25s ease-in-out;
 }
 
-.middle-bar{
+.middle-bar {
     margin-top: 0px;
 }
 
 /* quando clicar */
-.navbar-toggler .top-bar{
+.navbar-toggler .top-bar {
     margin-top: 0px;
     transform: rotate(135deg);
 }
-.navbar-toggler .middle-bar{
+
+.navbar-toggler .middle-bar {
     opacity: 0;
     filter: alpha(opacity=0);
 }
 
-.navbar-toggler .bottom-bar{
+.navbar-toggler .bottom-bar {
     margin-top: 0px;
     transform: rotate(-135deg);
 }
 
 /* estado quando estiver fechado */
 
-.navbar-toggler.collapsed .top-bar{
+.navbar-toggler.collapsed .top-bar {
     margin-top: -20px;
     transform: rotate(0deg);
 }
 
-.navbar-toggler.collapsed .middle-bar{
+.navbar-toggler.collapsed .middle-bar {
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
-.navbar-toggler.collapsed .bottom-bar{
+.navbar-toggler.collapsed .bottom-bar {
     margin-top: 20px;
     transform: rotate(0deg);
 }
 
-
-.sumir{
+.sumir {
     display: flex;
 }
 
-.circulo-lupa{
+.circulo-lupa {
     height: 58px;
     width: 58px;
 }
 
-.circulo-mais{
+.circulo-mais {
     width: 46px;
     height: 46px;
 }
 
-#portaldeduvidas{
+#portaldeduvidas {
     height: 46px;
     width: 290px;
 }
 
-.text-purple{
+.text-purple {
     color: #706EF4;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: black;
 }
 
-.logo-320px{
+.logo-320px {
     display: none;
 }
 
-.padding12{
+.padding12 {
     padding-top: 8px;
     padding-left: 12px;
 }
 
-.limitarw{
+.limitarw {
     width: 620px;
+}
+
+.espacamento-banner-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 /* ---- Main ---- */
 
-.firstsection{
+.firstsection {
     background-color: #F1F1F1;
     min-height: 367px;
     height: fit-content;
 }
 
-.padding-sections{
-    padding: 120px 0px;
+.padding-sections {
+    padding: 100px 0px;
 }
 
-.fonte-grande{
+.fonte-grande {
     font-size: 32pt;
 }
 
-picture > img{
+picture>img {
     width: 100%;
     height: auto;
 }
 
-.img-coca{
+.img-coca {
     width: 50%;
     padding-right: 31px;
 }
-.img-pepsi{
+
+.img-pepsi {
     width: 50%;
 }
 
-.tamanho-card{
+.tamanho-card {
     max-width: 100%;
     height: 385px;
 }
 
-.titulo-baixo{
+.titulo-baixo {
     display: none;
 }
 
-.padding-radio{
+.padding-radio {
     padding-top: 50px;
     padding-bottom: 33px;
 }
 
-.separar-radio{
+.separar-radio {
     gap: 37px;
 }
 
-.altura-radio{
+.altura-radio {
     height: 49px;
 }
 
-#radio1{
-    width: 103px;
+.btn-opcao {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 32px;
+    gap: 10px;
+    border: 1px solid #706EF4;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #706EF4;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-#radio2{
-    width: 180px;
+.btn-opcao.active {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 32px;
+    gap: 10px;
+    background: #706EF4;
+    color: #FFFFFF;
 }
 
-
-.folinha{
+.folinha {
     width: 250px;
     display: inline-flex;
-    color: black;
     text-decoration: none;
     border-bottom: 4px solid;
     border-color: #706EF4;
     height: 58px;
     align-items: center;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 54px;
+    color: #121212;
+    gap: 15px;
 }
 
-.gap-folinha{
+.gap-folinha {
     gap: 25px 30px;
+}
+
+.grid-videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.fundo-roxo{
+    background-color: #706EF4;
 }
 
 /* ---- Footer ---- */
 
-footer{
+footer {
     background-color: #121212;
 }
 
-.padding-footer{
+.padding-footer {
     padding-top: 100px;
 }
 
-.btn-medium{
+.btn-medium {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +278,7 @@ footer{
     background-color: #706EF4;
 }
 
-.fonte-pequena{
+.fonte-pequena {
     font-size: small;
 }
 
@@ -252,35 +286,35 @@ footer{
 
 /* Breakpoint XL */
 @media (max-width: 1199.98px) {
-    
-    .padding-folinha{
+
+    .padding-folinha {
         padding-top: 45px;
         padding-bottom: 45px;
     }
 
-    .folinha{
+    .folinha {
         width: 365px;
     }
 }
 
 /* Breakpoint LG */
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
 
-    .navbar-brand{
+    .navbar-brand {
         position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
 
-    .fonte-grande{
+    .fonte-grande {
         font-size: 30pt;
     }
 
-    .sumir-video{
+    .sumir-video {
         display: none;
     }
 
-    .estilo-dropdown{
+    .estilo-dropdown {
         background-color: rgba(255, 255, 255, 0);
     }
 }
@@ -289,31 +323,31 @@ footer{
 /* Breakpoint MD */
 @media (max-width: 767.98px) {
 
-    .fonte-grande{
+    .fonte-grande {
         font-size: 24pt;
     }
 
-    .limitarw{
+    .limitarw {
         width: auto;
     }
 
-    .titulo-cima{
+    .titulo-cima {
         display: none;
     }
 
-    .titulo-baixo{
+    .titulo-baixo {
         display: block;
     }
 
-    .logo-320px{
+    .logo-320px {
         display: none;
     }
 
-    .folinha{
+    .folinha {
         width: 200px;
     }
 
-    .padding-folinha{
+    .padding-folinha {
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -321,61 +355,57 @@ footer{
 }
 
 /* Breakpoint SM */
-@media (max-width: 575.98px){ 
+@media (max-width: 575.98px) {
 
-    header{
+    header {
         height: fit-content;
     }
 
-    .banner-image{
+    .banner-image {
         background-color: #706EF4;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0));
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
     }
 
-    nav{
+    nav {
         background-image: none;
         background-color: black;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         display: none;
     }
 
-    .estilo-dropdown{
+    .estilo-dropdown {
         background-color: #000;
     }
 
-    .sumir{
-        display: none;
-    }
-
-    .padding-titulo{
+    .padding-titulo {
         padding-top: 0px;
     }
 
-    .logo-320px{
+    .logo-320px {
         padding-top: 150px;
         padding-bottom: 40px;
         display: block;
     }
 
-    div > h1{
+    div>h1 {
         padding-top: 0px;
     }
 
-    h1{
+    h1 {
         font-size: 42px;
     }
 
-    .fonte-grande{
+    .fonte-grande {
         font-size: 20pt;
     }
 
-    #radio2{
+    #radio2 {
         width: 150px;
-    }    
+    }
 
-    .folinha{
+    .folinha {
         width: 100%;
     }
 }
